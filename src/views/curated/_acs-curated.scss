@@ -1,0 +1,16 @@
+.acs-filter-gallery {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    width: 100%;
+    margin-left: auto;
+    span {
+        text-transform: capitalize;
+        cursor: pointer;
+        &:hover {
+            color: #fff;
+        }
+    }
+}

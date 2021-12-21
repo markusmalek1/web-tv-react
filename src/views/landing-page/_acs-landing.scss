@@ -1,0 +1,32 @@
+.acs-paragraph-container {
+    width: 50%;
+    margin-bottom: 64px;
+}
+.acs-cards-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    .acs-link-card {
+        padding-right: 16px;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .acs-channel-card-container:last-child, .acs-card-container:last-child {
+        margin-right: 0 !important;
+    }
+}
+
+.acs-align-right {
+    float: right;
+}
+
+@media (max-width: 720px) {.acs-paragraph-container {
+    width: 100%;
+    margin-bottom: 64px;
+}
+}

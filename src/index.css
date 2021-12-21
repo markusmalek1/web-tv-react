@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Syne-Bold';
+  src: local('Syne-Bold'), url(./assets/font/Syne-Bold.ttf) format('ttf');
+}
+
+
+

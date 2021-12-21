@@ -1,0 +1,22 @@
+@import "./assets/styles/typography";
+@import "./assets/styles/font-styles";
+@import "./assets/styles/acs-layout";
+@import "./assets/styles/colors";
+
+// Pages
+
+@import "./views/landing-page/acs-landing";
+@import "./views/artistes/acs-artistes";
+@import "./views/curated/acs-curated";
+
+// compoents
+
+@import "./components/card/acs-card";
+@import "./components/layout/navbar/acs-navbar";
+@import "./components/layout/footer/acs-footer";
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+  color: #fff;
+}

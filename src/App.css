@@ -1,38 +1,406 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap");
+.acs-big-title {
+  font: 900 30px "Syne", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.acs-small-title {
+  font: 700 30px "Syne", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.acs-text {
+  font: 600 16px "Syne", sans-serif;
+  color: #fff;
+}
+
+.acs-text-var {
+  font: 600 16px "Syne", sans-serif;
+  color: #878787;
+}
+
+.acs-small-text {
+  font: 500 14px "Syne", sans-serif;
+  color: #fff;
+}
+
+.acs-link {
+  font: 600 16px "Syne", sans-serif;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.acs-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.acs-big-link {
+  font: 700 26px "Syne", sans-serif;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.acs-big-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.acs-title {
+  font: 600 16px "Syne", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.acs-layout {
+  width: 100vw;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.acs-page-container {
+  height: 100%;
+  min-height: calc(100vh - 343px);
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 1572px) {
+  .acs-layout {
+    padding-left: 66px;
+    padding-right: 66px;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 1440px) {
+  .acs-layout {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+  }
+}
+
+.acs-paragraph-container {
+  width: 50%;
+  margin-bottom: 64px;
+}
+
+.acs-cards-container {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.acs-cards-container .acs-link-card {
+  padding-right: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.acs-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.acs-cards-container .acs-channel-card-container:last-child, .acs-cards-container .acs-card-container:last-child {
+  margin-right: 0 !important;
+}
+
+.acs-align-right {
+  float: right;
+}
+
+@media (max-width: 720px) {
+  .acs-paragraph-container {
+    width: 100%;
+    margin-bottom: 64px;
   }
 }
+
+.acs-card-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -16px;
+}
+
+.acs-filter-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.acs-filter-gallery span {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.acs-filter-gallery span:hover {
+  color: #fff;
+}
+
+.acs-card-container {
+  height: 300px;
+  max-width: 400px;
+  width: calc(calc(1440px - 48px) /4);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.acs-card-container .acs-card-content {
+  height: 285px;
+  border: 1px solid #878787;
+  border-bottom: 0;
+}
+
+.acs-card-container .acs-card-content .acs-card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 245px;
+  overflow: hidden;
+}
+
+.acs-card-container .acs-card-content .acs-card-img img {
+  height: 100%;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.acs-card-container .acs-card-content .acs-card-info {
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.acs-card-container .acs-card-content .acs-card-info h4, .acs-card-container .acs-card-content .acs-card-info span {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.acs-channel-card-container {
+  height: 300px;
+  max-width: 500px;
+  width: calc(calc(1440px - 32px) /3);
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.acs-channel-card-container .acs-card-content {
+  height: 285px;
+  border: 1px solid #878787;
+  border-bottom: 0;
+}
+
+.acs-channel-card-container .acs-card-content .acs-card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+}
+
+.acs-channel-card-container .acs-card-content .acs-card-img img {
+  height: 100%;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.acs-channel-card-container .acs-card-content .acs-card-date {
+  height: 20px;
+  padding: 8px 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acs-channel-card-container .acs-card-content .acs-card-info {
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.acs-channel-card-container .acs-card-content .acs-card-info h4, .acs-channel-card-container .acs-card-content .acs-card-info span {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.acs-card-footer {
+  background-size: 100%;
+  background-image: url(https://backstage.connect.artculture.studio/uploads/Rectangle_3_dd1d3a228d.png);
+  height: 15px;
+  width: 100%;
+}
+
+.acs-navbar {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.acs-navbar .acs-navbar-left {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.acs-navbar .acs-navbar-right {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.acs-navbar .acs-logo {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.acs-navbar .acs-logo img {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 1572px) {
+  .acs-navbar {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+}
+
+.acs-footer .acs-footer-top {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+}
+
+.acs-footer .acs-footer-bottom {
+  background-size: 100%;
+  background-image: url(https://backstage.connect.artculture.studio/uploads/Rectangle_3_dd1d3a228d.png);
+  height: 15px;
+  width: 100%;
+}
+
+@media (max-width: 1572px) {
+  .acs-footer-top {
+    padding-left: 24px;
+    padding-right: 66px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .acs-footer-top {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+  color: #fff;
+}
+/*# sourceMappingURL=App.css.map */

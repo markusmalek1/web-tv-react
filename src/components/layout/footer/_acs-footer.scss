@@ -1,0 +1,32 @@
+.acs-footer {
+    .acs-footer-top {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+    }
+    .acs-footer-bottom {
+        background-size: 100%;
+        background-image: url(https://backstage.connect.artculture.studio/uploads/Rectangle_3_dd1d3a228d.png);
+        height: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1572px) {
+    .acs-footer-top {
+        padding-left: 24px;
+        padding-right: 66px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .acs-footer-top {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

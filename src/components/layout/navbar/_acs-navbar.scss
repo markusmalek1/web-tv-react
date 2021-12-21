@@ -1,0 +1,38 @@
+.acs-navbar {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    .acs-navbar-left {
+        height: 60px;
+        display: flex;
+        align-items: end;
+    }
+    .acs-navbar-right {
+        height: 60px;
+        display: flex;
+        align-items: end;
+    }
+    .acs-logo {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: end;
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 1572px) {
+    .acs-navbar {
+        padding-left: 66px;
+        padding-right: 66px;
+    }
+}

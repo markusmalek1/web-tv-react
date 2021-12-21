@@ -1,0 +1,56 @@
+@import "./colors";
+
+.acs-big-title {
+    font: $acs-big-title;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.acs-small-title {
+    font: $acs-small-title;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.acs-text {
+    font: $acs-text;
+    color: $white;
+}
+
+.acs-text-var {
+    font: $acs-text;
+    color: $grey;
+}
+
+.acs-small-text {
+    font: $acs-small-text;
+    color: $white;
+}
+
+.acs-link {
+    font: $acs-text;
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+
+.acs-big-link {
+    font: $acs-title;
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+
+.acs-title {
+    font: $acs-text;
+    color: $white;
+    text-transform: uppercase;
+}
