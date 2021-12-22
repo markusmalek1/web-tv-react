@@ -143,6 +143,27 @@
   margin-right: -16px;
 }
 
+.acs-card-gallery a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 480px) {
+  .acs-card-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -16px;
+    width: 100%;
+  }
+  .acs-card-gallery a {
+    width: 100%;
+  }
+}
+
 .acs-filter-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,6 +324,17 @@
   background-image: url(https://backstage.connect.artculture.studio/uploads/Rectangle_3_dd1d3a228d.png);
   height: 15px;
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .acs-card-container {
+    height: 300px;
+    max-width: calc(480px - 48px);
+    width: 100%;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
 }
 
 .acs-navbar {

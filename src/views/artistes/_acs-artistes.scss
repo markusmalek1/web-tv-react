@@ -2,4 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -16px;
+    a {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    .acs-card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -16px;
+    width: 100%;
+    a {
+        width: 100%;
+    }
+}
 }
