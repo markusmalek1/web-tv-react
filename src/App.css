@@ -56,6 +56,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 720px) {
+  .acs-big-link {
+    font-size: 20px !important;
+  }
+}
+
 .acs-layout {
   width: 100vw;
   max-width: 1440px;
@@ -335,6 +341,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  margin-top: 2px;
 }
 
 .acs-navbar .acs-logo {
@@ -357,6 +364,13 @@
   .acs-navbar {
     padding-left: 66px;
     padding-right: 66px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .acs-navbar {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -386,7 +400,7 @@
 
 @media (max-width: 1572px) {
   .acs-footer-top {
-    padding-left: 24px;
+    padding-left: 66px;
     padding-right: 66px;
   }
 }
