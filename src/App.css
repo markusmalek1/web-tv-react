@@ -141,15 +141,19 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -16px;
+  width: 100%;
 }
 
 .acs-card-gallery a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: calc(100% / 4);
 }
 
-@media (max-width: 480px) {
+.acs-card-gallery a .acs-card-container {
+  width: calc(100% - 16px);
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
   .acs-card-gallery {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,7 +164,46 @@
     width: 100%;
   }
   .acs-card-gallery a {
+    width: 100% !important;
+  }
+  .acs-card-gallery a .acs-card-container {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .acs-card-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -16px;
     width: 100%;
+  }
+  .acs-card-gallery a {
+    width: calc(100% / 3);
+  }
+  .acs-card-gallery a .acs-card-container {
+    width: calc(100% - 16px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .acs-card-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -16px;
+    width: 100%;
+  }
+  .acs-card-gallery a {
+    width: calc(100% / 2);
+  }
+  .acs-card-gallery a .acs-card-container {
+    width: calc(100% - 16px);
   }
 }
 
@@ -171,16 +214,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 500px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   margin-bottom: 32px;
   width: 100%;
+  max-width: 800px;
   margin-left: auto;
 }
 
+.acs-filter-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.acs-filter-gallery span:last-child {
+  margin-right: 0 !important;
+}
+
 .acs-filter-gallery span {
+  margin-right: 64px;
   text-transform: capitalize;
   cursor: pointer;
 }
